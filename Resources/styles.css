@@ -1,0 +1,552 @@
+/*Universal Styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nanum Gothic";
+    font-size: 1.25rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.35rem;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.07rem;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-weight: 600;
+}
+
+main {
+    position: relative;
+    top: 4.75rem;
+}
+
+.images-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 713px) {
+    body {
+        font-size: .85rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: .65rem;
+    }
+}
+
+/*Header*/
+
+header {
+    width: 100%;
+    height: 4.25rem;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 1px solid #031FF8;
+    background-color: #E0E2F1;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.25rem;
+}
+
+#logo {
+    width: auto;
+    max-height: 4.25rem;
+    position: relative;
+    top: -.5rem;
+    padding: 0 0 0.5rem 0.5rem;  
+}
+
+nav li {
+    display: inline;
+    padding: .6rem;
+}
+
+nav li:not(:last-child) {
+    border-right: 0.25rem dotted white;
+}
+
+nav a {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #3241B4;
+}
+
+nav a:hover {
+    font-weight: lighter;
+    color: #4156F8;
+}
+
+@media only screen and (max-width:713px) {
+    nav a {
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (max-width:417px) {
+    nav {
+        display: none;
+    }
+}
+
+/*Introduction*/
+
+.introduction {
+    width: 100%;
+    height: 40rem;
+}
+.intro {
+    width: 50%;
+    height: 40rem;
+    overflow: hidden;
+    padding: 1rem 5%;
+    background-image: url(./images/ema.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin: 0 0 2% 8%;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    display: inline;
+    float: left;
+    
+}
+
+#welcome {
+    width: 35%;
+    border: .7rem solid #031FF8;
+    border-radius: 10% 5%;
+    padding: 6% 4%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 2% 2% 3%;
+    background-color: azure;
+}
+
+#welcome h2 {
+    font-size: 1.6rem;
+    padding-bottom: 15%;
+    display: inline;
+    line-height: 1.5;
+}
+
+#welcome p {
+    text-align: center;
+    padding: 0 5% 14% 5%;
+    display: inline;
+}
+
+#welcome .button {
+    font-weight: 700;
+    border: 1px solid #2CBCE6;
+    border-radius: 25% 15%;
+    padding: 1rem 1.2rem;
+    background-color: #2CBCE6;
+    width: 45%;
+    vertical-align: center;
+}
+
+#welcome .button:hover {
+    color :white;
+    background-color: #031FF8;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 2535px) {
+    main {
+        width: 53%;
+        margin: auto;
+    }
+
+}
+@media only screen and (min-width: 2007px) and (max-width: 2534px) {
+    main {
+        width: 80%;
+        margin: auto;
+    }   
+}
+
+@media only screen and (max-width: 1342px) {
+    .intro {
+        background-position: right;
+        margin-left: 7%;
+    }
+
+    #welcome {
+        margin-top: 5.5%;
+    }
+}
+
+@media only screen and (max-width: 823px) {
+    .intro {
+        display: none;
+    }
+
+    .introduction {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30rem;
+    }
+
+    #welcome {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 503px) {
+    .introduction {
+        height: 28rem;
+    }
+
+    #welcome {
+        width: 80%;
+    }
+}    
+/*About-us section*/
+
+#about-us .content {
+    width: 100%;
+    height: fit-content;
+    padding: 2% 10%;
+}
+
+.content h2 {
+    padding-bottom: 1rem;
+}
+
+#about-us .text {
+    text-align: justify;
+    line-height: 1.3;
+    column-count: 2;
+    border-top: 4px solid blue;
+    padding-top: 0.5rem;
+}
+
+#character {
+    display: inline;
+}
+
+.quote {
+    display: inline;
+    margin-left: 1rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-image: url(./images/backgroundQuotes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.65;
+    width: 40%;
+    min-width: 157px;
+    max-width: 222px;
+    height: auto;
+    font-weight: 800;
+    color: #000;
+    float: right;
+    shape-outside: circle();
+   
+}
+
+.quote p {
+    text-align: center;
+    opacity: 1;
+    font-style: italic;
+    line-height: 1.4;
+    padding-bottom: 1rem;
+    padding: 20% 50% 0 20%;
+    
+}
+
+#author {
+    padding: 0 40% 10%;
+    opacity: 1;
+}
+
+@media only screen and (max-width:1050px) {
+    .quote {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:822px) {
+    #about-us .text {
+        column-count: 1;
+    }
+}
+/*News section*/
+
+#news .content {
+    width: 100%;
+    height: fit-content;
+    padding: 2% 10%;
+}
+
+#news h2 {
+    border-bottom: 4px solid blue;
+}
+
+#news h3 {
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.odd {
+    background-color: #D2E9F0;
+}
+
+.report {
+    padding-top: 1rem;
+}
+
+#news .image-container {
+    width: 17%;
+    min-width: 8.54rem;
+    height: auto;
+}
+
+#news img {
+    width: 100%;
+    float: left;
+    padding-right: .7rem;
+}
+
+.pad-bot {
+    padding-bottom: .7rem;
+}
+
+.report p {
+    clear: right;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0 .45rem;
+}
+
+@media only screen and (max-width: 532px) {
+    #news img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:713px) {
+    #news h3 {
+        font-size: 1rem;
+    }
+}
+
+/*Gallery*/
+
+#gallery .content {
+    width: 100%;
+    height: fit-content;
+    padding: 2% 10%;
+}
+
+#gallery h2 {
+    border-bottom: 4px solid blue;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.images-container a {
+    width: 30%;
+    min-width: 14.5rem;
+    height: auto;
+}
+
+.images-container a img{
+    display: inline-block;
+    width: 100%;
+    min-width: 14.5rem;
+    height: 100%;
+    padding: .5rem;
+}
+
+/*Carrers*/
+
+#carrers .content {
+    width: 100%;
+    height: fit-content;
+    padding: 2% 10%;
+}
+
+#carrers h2 {
+    border-bottom: 4px solid blue;
+}
+
+#first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+#first img {
+    width: 50%;
+    height: auto;
+    padding-bottom: .7rem;
+}
+
+#first h4 {
+    letter-spacing: 1.5px;
+    padding-bottom: 1rem;
+}
+
+.people {
+    display: flex;
+    justify-content: space-between;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    width: 20%;
+}
+
+.line {
+    border-right: .85rem solid #3241B4;
+}
+
+.person img {
+    width: 90%;
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+.person h4 {
+    padding: .5rem 0;
+}
+
+@media only screen and (max-width:597px)  {
+    .line {
+        border-right: .55rem solid #3241B4;
+    }
+
+    .name h3 {
+        font-size: .81rem;
+    }
+}
+@media only screen and (max-width:416px)  {
+    .line {
+        border-right: .28rem solid #3241B4;
+    }
+}
+/*Footer*/
+
+footer {
+    position: relative;
+    top: 4.75rem;
+    width: 100%;
+    height: 4rem;
+    border-top: 1px solid #031FF8;
+    background-color: #E0E2F1;
+}
+
+footer .content {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+
+}
+
+footer ul {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+footer li {
+    display: inline;
+    padding: 0 10.7%;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 800;
+    color: #3241B4;
+}
+
+footer li:not(:last-child) {
+    border-right: 0.25rem dotted white;
+}
+
+footer a:hover {
+    font-weight: lighter;
+    color: #4156F8;
+}
+
+@media only screen and (max-width:1094px)  {
+    footer a {
+        font-size: .6rem;
+    }
+}
+
+@media only screen and (max-width:420px)  {
+    footer a {
+        font-size: .45rem;
+    }
+}
+
+@media only screen and (max-width:827px)  {
+    footer li {
+        padding: 0 7%;
+    }
+}
+
+@media only screen and (max-width:466px)  {
+    footer li {
+        padding: 0 4.5%;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
